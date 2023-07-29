@@ -7,7 +7,7 @@
 -To delete all the buffers at once: `%bdelete`
 NOTE: sometimes the swap files conflicts with the actual file(which may conflict with the variables/functions/objects/classes etc), just delete the swap files present, that should solve the problem 
 -To see the warnings/error(diagnostics) that goes out of the screen: `]d`
--clangd doesn't support utf-16, to make it support add this to the lspconfig.lua, or else a warning would keep on appearing whenever a symbol is typed: 
+-clangd doesn't support utf-16, to make it support add this to the lspconfig.lua, or else a warning would keep on appear whenever a symbol is typed: 
 ```
 lspconfig.clangd.setup {
   on_attach = on_attach,
@@ -19,4 +19,18 @@ lspconfig.clangd.setup {
     "--offset-encoding=utf-16",
   }
 }```
+-To change the code comments default color, add this to your highlights.lua:
+```M.override = {
+  Comment = {
+    italic = true,
+    fg = "#4dde21"//your desired color
+  },
+}```
+-To move the cursor being in the Insert mode: <C-h/j/k/l> 
+-To toggle between Insert/Command mode for only one task(helpful when you want to edit just one thing but dont want to switch back and forth between Insert/command mode manually): being in Insert/command mode press <C-o> (NOTE: it will toggle back to the previous mode it was in after one command)
+-Alternative to <Esc> to go to command mode: <C-[> (very handy)
+-Go to the end of the line and get into insert mode: <A>
+-Go to the end of the line but stay in command mode: $
+-Go to the start of the line and get into insert mode: <I>
+-Go to the start of the line but stay in command mode: 0
 
