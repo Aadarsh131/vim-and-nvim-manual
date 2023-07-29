@@ -26,7 +26,7 @@ lspconfig.clangd.setup {
     fg = "#4dde21"//your desired color
   },
 }```
--To move the cursor being in the Insert mode: <C-h/j/k/l> 
+-To move the cursor being in the Insert mode: <C-h/j/k/l> (depends on where you want to move, left/down/up/right respectively) 
 -To toggle between Insert/Command mode for only one task(helpful when you want to edit just one thing but dont want to switch back and forth between Insert/command mode manually): being in Insert/command mode press <C-o> (NOTE: it will toggle back to the previous mode it was in after one command)
 -Alternative to <Esc> to go to command mode: <C-[> (very handy)
 -Go to the end of the line and get into insert mode: <A>
