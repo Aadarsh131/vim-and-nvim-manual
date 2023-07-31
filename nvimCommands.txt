@@ -6,7 +6,7 @@
 -To help/know more about deleting buffer: `:h bdelete`
 -To delete all the buffers at once: `%bdelete`
 NOTE: sometimes the swap files conflicts with the actual file(which may conflict with the variables/functions/objects/classes etc), just delete the swap files present, that should solve the problem 
--To see the warnings/error(diagnostics) that goes out of the screen: `]d`
+-To see the warnings/error(diagnostics) that goes out of the screen: `]d` or `[d`
 -clangd doesn't support utf-16, to make it support add this to the lspconfig.lua, or else a warning would keep on appear whenever a symbol is typed: 
 ```
 lspconfig.clangd.setup {
