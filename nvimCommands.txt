@@ -1,6 +1,7 @@
 ---------------------------------I am currently using NvChad----------------------------
 
 -To list down the buffers: `:ls!`
+-To list down the buffers using telescope: "<leader>fb"
 -To give the buffer a name: first open the buffer and being in terminal mode type `:file <myservername>`
 -To open the buffers out of the list: `:b(uffer) <bufferno./buffername>`
 -To help/know more about deleting buffer: `:h bdelete`
